@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Your Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-secondary d-flex flex-column align-items-center p-4">
+
+    <div class="cart-container continer-fluid row mx-auto my-auto">
+        <div
+            class="cart row col-11 col-lg-8 col-md-12 flex-column bg-light mx-auto shadow-lg rounded p-4 animate__animated animate__backInLeft">
+            <div class="col my-2 p-0 fw-bolder cart-counter">Cart (1items)</div>
+            <div class="product">
+                <img style="width: 10rem;" src="https://i.dummyjson.com/data/products/10/2.jpg"
+                    class="col-3 d-block p-4 border m-4 rounded shadow-lg" alt="Img -1">
+                <div class="col my-auto p-4">
+                    <div class="row">
+                        <h5 class="col card-title">HP Pavilion 15-DK1056WM</h5>
+                        <ul class="col pagination no-select">
+                            <li class="page-item"><span class="page-link" onclick="minus(this)">&#8722;</span></li>
+                            <li class="page-item active"><span class="page-link">2</span></li>
+                            <li class="page-item"><span class="page-link" onclick="plus(this)">&#43;</span></li>
+                        </ul>
+                    </div>
+                    <p class="card-text">Laptops</p>
+                    <p class="card-text" price="80700">Rs. 80700</p>
+                    <div class="card-text row" id="add3span">3 spans</div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="sidebar col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5 mt-sm-5 animate__animated animate__backInRight">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Buy product</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th style="min-width: 85px;">Cost</th>
+                                <th class="text-center">Quantity</th>
+                                <th style="min-width: 100px;">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cost-products">
+                        </tbody>
+                        <tbody id="cost-result" style="border-top: 3px solid #000;border-bottom: 3px solid;">
+                            <tr>
+                                <td colspan="3"><strong>Total amount of products including VAT is :- </strong></td>
+                                <td id="show-result"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="container-fluid py-4 px-0 fs-4 fw-bolder btn" onclick="goToSellProductList()">Add a New
+                        product</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-container container-fluid row position-absolute mx-auto my-auto animate__animated animate__bounceInDown w-100 justify-content-between"
+        style="z-index: 1000; display: none;">
+
+        <div
+            class="head container-fluid bg-light d-flex justify-content-between align-items-center my-2 float-end py-2">
+            <h3>Product List</h3>
+            <i class="fa-solid fa-xmark fs-4 me-4" onclick="goToCartList()"></i>
+        </div>
+    </div>
+
+
+    <script src="./js/products.js"></script>
+    <script src="./js/addelements.js"></script>
+    <script src="./js/settimeout.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/btn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

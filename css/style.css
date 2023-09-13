@@ -1,0 +1,7 @@
+.no-select {
+    user-select: none !important;
+}
+
+#cost-products>tr>td:nth-child(3) {
+    text-align: center;
+}
