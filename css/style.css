@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .no-select {
     user-select: none !important;
 }
