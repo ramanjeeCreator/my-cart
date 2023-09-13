@@ -10,7 +10,15 @@ body {
     text-align: center;
 }
 
-.table {
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%; /* Optional: restrict the maximum width of the container */
+}
+table {
+    width: 100%; /* Make the table take the full width of the container */
+}
+
+/* .table {
     overflow-x: visible;
     min-width: 382px
-}
+} */
