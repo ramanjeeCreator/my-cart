@@ -9,3 +9,8 @@ body {
 #cost-products>tr>td:nth-child(3) {
     text-align: center;
 }
+
+.table {
+    overflow-x: visible;
+    min-width: 382px
+}
